@@ -69,7 +69,7 @@ async function shortenUrlAndSend(chatId, Url) {
   }
 
   try {
-    const apiUrl = `https://mybios.eu.org/api?api=${arklinksToken}&url=${Url}`;
+    const apiUrl = `https://shrinkearn.site/api?api=${arklinksToken}&url=${Url}`;
 
     // Make a request to the MyBios API to shorten the URL
     const response = await axios.get(apiUrl);
