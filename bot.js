@@ -25,11 +25,12 @@ bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
   const username = msg.from.username;
   const welcomeMessage = `Hello, ${username}!\n\n`
-    + 'Welcome to the URL Shortener Bot!\n'
-    + 'You can use this bot to shorten URLs using the mybios.eu.org service.\n\n'
-    + 'To shorten a URL, just type or paste the URL directly in the chat, and the bot will provide you with the shortened URL.\n\n'
-    + 'If you haven\'t set your MyBios API token yet, use the command:\n/api YOUR_MYBIOS_API_TOKEN\n\n'
-    + 'Now, go ahead and try it out!';
+    + '✅Welcome to the Shrink Earn URL Shortener Bot🤖!\n\n'
+    + '✅You can use this bot to shorten URLs using the shrinkearn.site service📈.\n\n'
+    + '✅To shorten a URL, just type or paste the URL directly in the chat, and the bot will provide you with the shortened URL📄.\n\n'
+    + '✅If you haven\'t set your Shrink Earn API token yet, use the command:\n/api YOUR_ShrinkEarn_API_TOKEN🔓\n\n'
+    + '🤔If you don not know how to get Api key join our channel @shrinkearnsite.\n\n'
+    + '👍Now, go ahead and try it out!';
 
   bot.sendMessage(chatId, welcomeMessage);
 });
@@ -43,7 +44,7 @@ bot.onText(/\/api (.+)/, (msg, match) => {
   // Save the user's MyBios API token to the database
   saveUserToken(chatId, userToken);
 
-  const response = `MyBios API token set successfully. Your token: ${userToken}`;
+  const response = `ShrinkEarn API token set successfully. Your token: ${userToken}`;
   bot.sendMessage(chatId, response);
 });
 
@@ -64,7 +65,7 @@ async function shortenUrlAndSend(chatId, Url) {
   const arklinksToken = getUserToken(chatId);
 
   if (!arklinksToken) {
-    bot.sendMessage(chatId, 'Please provide your MyBios API token first. Use the command: /api YOUR_MYBIOS_API_TOKEN');
+    bot.sendMessage(chatId, 'Please provide your ShrinkEarn API token first. Use the command: /api YOUR_ShrinkEarn_API_TOKEN');
     return;
   }
 
