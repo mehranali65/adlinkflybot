@@ -41,7 +41,7 @@ bot.onText(/\/api (.+)/, (msg, match) => {
   const chatId = msg.chat.id;
   const userToken = match[1].trim(); // Get the API token provided by the user
 
-  // Save the user's MyBios API token to the database
+  // Save the user's ShrinkEarn API token to the database
   saveUserToken(chatId, userToken);
 
   const response = `ShrinkEarn API token set successfully. Your token: ${userToken}`;
