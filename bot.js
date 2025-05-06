@@ -29,7 +29,8 @@ bot.onText(/\/start/, (msg) => {
     + '✅You can use this bot to shorten URLs using the shrinkearn.site service📈.\n\n'
     + '✅To shorten a URL, just type or paste the URL directly in the chat, and the bot will provide you with the shortened URL📄.\n\n'
     + '✅If you haven\'t set your Shrink Earn API token yet, use the command:\n/api YOUR_ShrinkEarn_API_TOKEN🔓\n\n'
-    + '🤔If you don not know how to get Api key join our channel @shrinkearnsite.\n\n'
+    + '🤔If you don not know how to get Api key join our Guide channel @shrinkearnguide.\n\n'
+    + '🥰For future updates join our main Channel @shrinkearnsite.\n\n'
     + '👍Now, go ahead and try it out!';
 
   bot.sendMessage(chatId, welcomeMessage);
